@@ -1,0 +1,23 @@
+n,m=input().split()
+n=int(n)
+m=int(m)
+arr=[]
+arr=input().split()
+arr=[int(i) for i in arr]
+lst1=[]
+lst1=input().split()
+lst1=[int(i) for i in lst1]
+set2=set(lst1)
+#print(set2)
+lst2=[]
+lst2=input().split()
+lst2=[int(i) for i in lst2]
+set3=set(lst2)
+#print(set3)
+c=0
+for i in range(len(arr)):
+    if(arr[i]  in set2):
+        c=c+1
+    elif(arr[i] in set3):
+        c=c-1    
+print(c)        
