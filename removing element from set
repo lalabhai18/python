@@ -1,0 +1,19 @@
+n = int(input())
+s = set(map(int, input().split()))
+#print(s)
+m=int(input())
+for i in range(m):
+    lst=[]
+    lst=input().split()
+    if(lst[0]=="pop"):
+        s.pop()
+    elif(lst[0]=="remove"):
+        s.remove(int(lst[1]))
+    elif(lst[0]=="discard"):
+        s.discard(int(lst[1]))
+lst1=list(s)
+#print(lst1)
+sum=int(0)
+for i in range(len(lst1)):
+    sum = sum + lst1[i]        
+print(sum)
