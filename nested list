@@ -1,0 +1,44 @@
+if __name__ == '__main__':
+    name=[]
+    name1=[]
+    score=[]
+    n=int(input())
+    for i in range(n):
+        name.append(input())
+        score.append(float(input()))
+    # print(name)
+    #print(score)
+    min1=score[0]
+    #print(min)
+    #for i in range(n):
+    #   if(score[i]<min):
+    #      min=score[i];
+    #print(min(score))  
+    #for i in range(n):
+    #    if(score[i]!=min1):
+    #       secondmax=score[i]
+    #        break
+    #for i in range(n):
+    #    if(score[i]<secondmax and score[i]!=min1):
+    #        secondmax=[i]
+    #for i in range(n):
+    #    if(secondmax==score[i]):
+    #        name1.append(name[i])
+    #name1.sort()
+    len2=len(score)
+    #for i in range(len2):
+    #    print(name1[i])
+    score1=[float(i) for i in score]
+    score.sort()
+    for i in range(len2):
+        if(score[i]!=min(score)):
+            break
+    #print(score[i])        
+    for j in range(len2):
+        if(score[i]==score1[j]):
+            name1.append(name[j])
+    name1.sort()
+    len1=len(name1)
+    for i in range(len1):
+        print(name1[i])
+
