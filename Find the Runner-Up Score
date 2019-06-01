@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    len1=len(arr)
+    #print(len1)
+    max=arr[0]
+    for i in range(len1):
+        if(arr[i]>max):
+            max=arr[i];
+    for i in range(len1):
+        if(arr[i]!=max):
+            secondmax=arr[i]
+            break
+    for i in range(len1):
+        if(secondmax<arr[i] and arr[i]!=max):
+            secondmax=arr[i]
+    print(secondmax)     
