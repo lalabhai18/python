@@ -1,0 +1,6 @@
+n=int(input())
+#print(n)
+count = 0
+while(count < n):
+    print(count * count)
+    count = count + 1
