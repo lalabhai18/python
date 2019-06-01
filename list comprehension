@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    #if(x>=y and x>=z):
+output_list=[[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if i+j+k!=n];
+   # elif(y>x and y>z):
+       #  output_list=[[i,j,k] for k in range(z+1) for i in range(x+1) for j in range(y+1) if i+j+k!=n];   
+   # elif(z>x and z>y):
+       # output_list=[[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) #if i+j+k!=n]; 
+print(output_list);     
