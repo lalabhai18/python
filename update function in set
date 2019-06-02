@@ -1,0 +1,22 @@
+n=int(input())
+set1=set(map(int,input().split()))
+#print(set1)
+m=int(input())
+for i in range(m):
+    lst=[]
+    c=[]
+    lst=input().split()
+    c= list(map(int,input().split()))
+    if(lst[0]=="update"):
+        set1.update(c)
+        #print(set1)
+    elif(lst[0]=="intersection_update"):
+        set1.intersection_update(c)
+        #print(set1)
+    elif(lst[0]=="difference_update"):
+        set1.difference_update(c)
+        #print(set1)
+    elif(lst[0]=="symmetric_difference_update"):
+        set1.symmetric_difference_update(c)
+        #print(set1)           
+print(sum(set1))
