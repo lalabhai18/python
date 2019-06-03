@@ -1,0 +1,7 @@
+a=int(input())
+b=int(input())
+tup=()
+tup=divmod(a,b)
+for i in tup:
+    print(i)
+print(tup)    
