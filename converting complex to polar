@@ -1,0 +1,7 @@
+import cmath
+n=complex(input())
+#print(n)
+tup=()
+tup=cmath.polar(n)
+for i in tup:
+    print(i)
